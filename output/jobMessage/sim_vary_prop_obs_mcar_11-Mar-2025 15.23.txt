@@ -1,0 +1,31 @@
+[1] "System time = 2025-03-11 15:23:51.429213"
+# A tibble: 90,000 × 7
+   prop_obs_s0 prop_obs_s1 R.true R.layla Model_parameter Estimation group  
+   <fct>       <fct>        <dbl> <lgl>   <chr>                <dbl> <chr>  
+ 1 0.3         0.4            0.5 NA      R.gold               0.483 0.3-0.4
+ 2 0.3         0.4            0.5 NA      R.complete           0.672 0.3-0.4
+ 3 0.3         0.4            0.5 NA      R.ipw.ipw            0.433 0.3-0.4
+ 4 0.3         0.4            0.5 NA      R.ipw.complete       0.673 0.3-0.4
+ 5 0.3         0.4            0.5 NA      R.smle.ipw           0.484 0.3-0.4
+ 6 0.3         0.4            0.5 NA      R.smle.complete      0.722 0.3-0.4
+ 7 0.3         0.4            0.5 NA      R.gold               0.532 0.3-0.4
+ 8 0.3         0.4            0.5 NA      R.complete           0.713 0.3-0.4
+ 9 0.3         0.4            0.5 NA      R.ipw.ipw            0.535 0.3-0.4
+10 0.3         0.4            0.5 NA      R.ipw.complete       0.716 0.3-0.4
+# ℹ 89,990 more rows
+# ℹ Use `print(n = ...)` to see more rows
+# A tibble: 90,000 × 7
+   prop_obs_s0 prop_obs_s1 R.true R.layla Model_parameter Estimation group  
+   <fct>       <fct>        <dbl> <lgl>   <chr>                <dbl> <chr>  
+ 1 0.3         0.4            0.5 NA      R.gold               0.483 0.3-0.4
+ 2 0.3         0.4            0.5 NA      R.complete           0.672 0.3-0.4
+ 3 0.3         0.4            0.5 NA      R.ipw.ipw            0.433 0.3-0.4
+ 4 0.3         0.4            0.5 NA      R.ipw.complete       0.673 0.3-0.4
+ 5 0.3         0.4            0.5 NA      R.smle.ipw           0.484 0.3-0.4
+ 6 0.3         0.4            0.5 NA      R.smle.complete      0.722 0.3-0.4
+ 7 0.3         0.4            0.5 NA      R.gold               0.532 0.3-0.4
+ 8 0.3         0.4            0.5 NA      R.complete           0.713 0.3-0.4
+ 9 0.3         0.4            0.5 NA      R.ipw.ipw            0.535 0.3-0.4
+10 0.3         0.4            0.5 NA      R.ipw.complete       0.716 0.3-0.4
+# ℹ 89,990 more rows
+# ℹ Use `print(n = ...)` to see more rows

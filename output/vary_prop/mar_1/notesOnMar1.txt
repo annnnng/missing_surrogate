@@ -1,0 +1,11 @@
+the missingness mechanism is as follow:
++ S1 is observed for some percentage if Y is less than the median
++ S0 is observed for some percentage if Y is more than the median
+
+
+m2.1 = rep(1,n1)
+m2.1[y1 < median(y1)] = rbinom(sum(y1 < median(y1)),1,prop_obs_s1)
+m2.0 = rep(1,n0)
+m2.0[y0 > median(y0)] = rbinom(sum(y0 > median(y0)),1,prop_obs_s0)
+df$Miss = c(m2.0, m2.1)
+df$Smiss[c(m2.0, m2.1) == 0] = NA

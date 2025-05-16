@@ -1,0 +1,19 @@
+[1] "System time = 2025-01-22 11:30:56.195379"
+[1] "System time = 2025-01-22 11:30:56.917465"
+[1] "System time = 2025-01-22 11:30:57.453326"
+[1] "System time = 2025-01-22 11:30:57.97097"
+Sims with prop s0 = 0.3 - prop s1 = 1: 0.47 sec elapsed
+[1] "System time = 2025-01-22 11:30:58.442824"
+[1] "System time = 2025-01-22 11:30:59.0256"
+[1] "System time = 2025-01-22 11:30:59.502919"
+[1] "System time = 2025-01-22 11:30:59.887149"
+Sims with prop s0 = 0.5 - prop s1 = 1: 0.258 sec elapsed
+[1] "System time = 2025-01-22 11:31:00.14572"
+[1] "System time = 2025-01-22 11:31:00.570021"
+[1] "System time = 2025-01-22 11:31:00.875634"
+[1] "System time = 2025-01-22 11:31:01.159806"
+Sims with prop s0 = 0.7 - prop s1 = 1: 0.132 sec elapsed
+[1] "System time = 2025-01-22 11:31:01.291607"
+[1] "System time = 2025-01-22 11:31:01.663249"
+[1] "System time = 2025-01-22 11:31:01.859786"
+[1] "System time = 2025-01-22 11:31:02.016759"

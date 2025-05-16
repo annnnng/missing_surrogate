@@ -1,0 +1,43 @@
+We're trying to do MAR with the following missing mechanism:
+For the treatment group (Z=1):
+- when Y < median(Y), then there is a 70% chance of being observed 
+- otherwise, fully observed
+* This seems to be when the outcome is low, we don't have as much measurement
+For the control group (Z=0):
+- when Y > median(Y), then there is a 60% chance of being observed 
+- otherwise, fully observed
+* This seems to be when the outcome is high, we don't have as much measurement
+? when does this comes up in practice
+
+For this scenario, the complete case would over-estimate the proportion of treatment explained (R.s).
+For the following, we assume that the weights (w) is known:
+- For treatment, when Y < median(Y), then w=0.7; otherwise, w = 1
+- For control, when Y > median(Y), then w=0.6; otherwise, w = 1
+? This is a lot of information. Do we typically know this weights distribution in practice?
+
+Layla has fixed this problem with IPW in her non-parametric methods by doing the following:
+- Find delta using the complete case difference in weighted outcomes mean (weighted y1 - weighted y0)
+- Find delta.s using the non-parametric approach with known weights
+- Find R = 1-delta.s/delta
+
+We try IPW with the full Wang's approach as follow:
+- Fit a weighted lm Y ~ Z + S + Z*S to find the gammas
+- Fit a weighted / complete case lm S ~ Z to find the alphas
+- Find delta = (gamma2 - gamma0)  + gamma3* alpha1 - + gamma1 *  alpha0
+- Find delta.s = (gamma2 - gamma0) + (gamma3 - gamma1) * alpha0 
+- Find R = 1-delta.s/delta
+* This approach yield a biased estimator
+
+We try IPW again, but modify it:
+- Find delta = weighted y1 - weighted y0
+
+Seems like it's the delta piece that is biasing the results
+Interesting notes that lm complete case will yield different results from using the complete case mean
+
+Figure it out! I was implementing the IPW piece wrong
+Rerunning the code now! Wondering if:
++ We can utilise smle to also find expectation of S in the same or different step
++ How to best find the weights?
++ Does weighted different in Y the same as IPW
++ Maybe run stuff on the cluster lol
++ Can we make this anymore efficient 

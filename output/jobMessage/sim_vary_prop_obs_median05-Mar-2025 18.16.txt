@@ -1,0 +1,31 @@
+[1] "System time = 2025-03-05 18:16:35.12789"
+Sims with prop s0 = 0.3 - prop s1 = 0.3: 1.518 sec elapsed
+[1] "System time = 2025-03-05 18:16:36.646271"
+Sims with prop s0 = 0.3 - prop s1 = 0.5: 1.152 sec elapsed
+[1] "System time = 2025-03-05 18:16:37.798421"
+Sims with prop s0 = 0.3 - prop s1 = 0.7: 1.055 sec elapsed
+[1] "System time = 2025-03-05 18:16:38.854123"
+Sims with prop s0 = 0.3 - prop s1 = 1: 1.202 sec elapsed
+[1] "System time = 2025-03-05 18:16:40.139648"
+Sims with prop s0 = 0.5 - prop s1 = 0.3: 1.523 sec elapsed
+[1] "System time = 2025-03-05 18:16:41.665316"
+Sims with prop s0 = 0.5 - prop s1 = 0.5: 0.902 sec elapsed
+[1] "System time = 2025-03-05 18:16:42.56769"
+Sims with prop s0 = 0.5 - prop s1 = 0.7: 0.68 sec elapsed
+[1] "System time = 2025-03-05 18:16:43.248156"
+Sims with prop s0 = 0.5 - prop s1 = 1: 0.388 sec elapsed
+[1] "System time = 2025-03-05 18:16:43.636259"
+Sims with prop s0 = 0.7 - prop s1 = 0.3: 1.152 sec elapsed
+[1] "System time = 2025-03-05 18:16:44.788371"
+Sims with prop s0 = 0.7 - prop s1 = 0.5: 0.581 sec elapsed
+[1] "System time = 2025-03-05 18:16:45.369694"
+Sims with prop s0 = 0.7 - prop s1 = 0.7: 0.379 sec elapsed
+[1] "System time = 2025-03-05 18:16:45.74819"
+Sims with prop s0 = 0.7 - prop s1 = 1: 0.242 sec elapsed
+[1] "System time = 2025-03-05 18:16:45.990938"
+Sims with prop s0 = 1 - prop s1 = 0.3: 1.094 sec elapsed
+[1] "System time = 2025-03-05 18:16:47.085372"
+Sims with prop s0 = 1 - prop s1 = 0.5: 0.395 sec elapsed
+[1] "System time = 2025-03-05 18:16:47.480252"
+Sims with prop s0 = 1 - prop s1 = 0.7: 0.199 sec elapsed
+[1] "System time = 2025-03-05 18:16:47.68071"

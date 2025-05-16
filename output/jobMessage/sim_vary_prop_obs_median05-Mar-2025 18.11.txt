@@ -1,0 +1,48 @@
+[1] "System time = 2025-03-05 18:12:16.41822"
+
+Call:
+lm(formula = Y ~ Z * Smiss, data = df, weights = weights)
+
+Weighted Residuals:
+    Min      1Q  Median      3Q     Max 
+-9.6239 -1.7907 -0.0681  1.8454  8.3986 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   2.5149     0.7172   3.507 0.000468 ***
+Z             0.2544     0.8423   0.302 0.762685    
+Smiss         4.8711     0.1622  30.035  < 2e-16 ***
+Z:Smiss       1.1784     0.1739   6.774 1.83e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.75 on 1413 degrees of freedom
+  (583 observations deleted due to missingness)
+Multiple R-squared:  0.9484,	Adjusted R-squared:  0.9483 
+F-statistic:  8654 on 3 and 1413 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = Smiss ~ Z, data = df, weights = weights)
+
+Weighted Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.5871 -0.7371  0.0094  0.5850  5.5403 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  4.36161    0.05353   81.48   <2e-16 ***
+Z            2.44643    0.07283   33.59   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.247 on 1415 degrees of freedom
+  (583 observations deleted due to missingness)
+Multiple R-squared:  0.4437,	Adjusted R-squared:  0.4433 
+F-statistic:  1128 on 1 and 1415 DF,  p-value: < 2.2e-16
+
+            Estimate        SE  Statistic      p-value
+Intercept  2.8096676 0.5986245  4.6935393 2.685184e-06
+Smiss      4.9505791 0.1249665 39.6152457 0.000000e+00
+Sinter     1.1104450 0.1371509  8.0965223 5.551115e-16
+Z         -0.3100863 0.7071396 -0.4385079 6.610181e-01

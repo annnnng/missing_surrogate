@@ -1,0 +1,19 @@
+[1] "System time = 2025-03-13 12:01:39.373304"
+# A tibble: 18,000 × 7
+   prop_obs_s0 prop_obs_s1 R.true
+   <fct>       <fct>        <dbl>
+ 1 0.3         0.3            0.5
+ 2 0.3         0.3            0.5
+ 3 0.3         0.3            0.5
+ 4 0.3         0.3            0.5
+ 5 0.3         0.3            0.5
+ 6 0.3         0.3            0.5
+ 7 0.3         0.3            0.5
+ 8 0.3         0.3            0.5
+ 9 0.3         0.3            0.5
+10 0.3         0.3            0.5
+# ℹ 17,990 more rows
+# ℹ 4 more variables: R.layla <lgl>,
+#   Model_parameter <chr>,
+#   Estimation <dbl>, group <chr>
+# ℹ Use `print(n = ...)` to see more rows

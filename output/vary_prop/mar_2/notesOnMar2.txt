@@ -1,0 +1,3 @@
+The missingness mechanism is as follow:
++ S1 is missing some percentage at random 
++ S0 is missing some percentage at random
