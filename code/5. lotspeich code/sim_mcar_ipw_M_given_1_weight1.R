@@ -118,8 +118,8 @@ for (r in 1:1000) {
                              type = "model", 
                              wone = w1, 
                              wzero = w0)
-  sim_res[r, c("ipw_nonparam_delta", "ipw_nonparam_delta.s", "ipw_nonparam_R.s")] = with(Rparam_miss_ipw, 
-                                                                                         c(delta, delta.s, R.s))
+  sim_res[r, c("ipw_param_delta", "ipw_param_delta.s", "ipw_param_R.s")] = with(Rparam_miss_ipw,
+                                                                                c(delta, delta.s, R.s))
   ## Estimate R with semiparametric approach (SMLE)
   Rparam_miss_smle = R.s.miss(sone = s1, 
                               szero = s0,
@@ -130,6 +130,7 @@ for (r in 1:1000) {
   
   ## Save 
   sim_res |> 
-    write.csv("~/Research/missing_surrogate/code/5. lotspeich code/mcar_weightYandZ_sim_res.csv", 
+    write.csv("~/Research/missing_surrogate/code/5. lotspeich code/mcar_weightY+Z_sim_res.csv", 
               row.names = FALSE)
 }
+

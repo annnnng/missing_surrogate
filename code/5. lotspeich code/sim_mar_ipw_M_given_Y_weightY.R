@@ -80,7 +80,7 @@ for (r in 1:1000) {
   ipw_dat = data.frame(m = c(m1, m0), 
                        y = c(y1, y0), 
                        z = rep(x = c(1, 0), each = 1000))
-  ipw_fit = glm(formula = m ~ y+z, 
+  ipw_fit = glm(formula = m ~ z, 
                 family = "binomial", 
                 data = ipw_dat)
   w1 = predict(object = ipw_fit, 
@@ -126,6 +126,6 @@ for (r in 1:1000) {
   
   ## Save 
   sim_res |> 
-    write.csv("~/Research/missing_surrogate/code/5. lotspeich code/mar_contY_sim_res.csv", 
+    write.csv("~/Research/missing_surrogate/code/5. lotspeich code/mar_contY_weightZ_sim_res.csv", 
               row.names = FALSE)
 }

@@ -1,8 +1,11 @@
 ###########################################
 ### MCAR
 ###########################################
+setwd("code/5. lotspeich code")
+library(latex2exp)
+library(ggplot2)
 
-sim_res = 
+sim_res = read.csv("mar_contY_weightY_sim_res.csv")
 
 res_long = sim_res |> 
   tidyr::pivot_longer(cols = gs_nonparam_delta:smle_param_R.s, 
@@ -36,7 +39,7 @@ res_long = sim_res |>
                                            "SMLE (P)")), 
                 parametric = !grepl(pattern = "(NP)", 
                                     x = method))
-
+jpeg('mcar_weight1.jpg')
 # Make a boxplot 
 res_long |> 
   ggplot(aes(x = method, y = est, fill = parametric)) + 
@@ -49,7 +52,7 @@ res_long |>
         strip.background = element_rect(fill = "black"), 
         strip.text = element_text(color = "white")) + 
   ggtitle(label = "Boxplot of estimates under missingness completely at random (MCAR)")
-
+dev.off()
 ###########################################
 # MAR given Y
 ###########################################
