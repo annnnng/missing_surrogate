@@ -85,7 +85,7 @@ for (r in 1:1000) {
                        y = c(y1, y0), 
                        z = rep(x = c(1, 0), each = 1000))
   ## Calculate weights for IPW approaches
-  ipw_fit = glm(formula = m ~ y+z, 
+  ipw_fit = glm(formula = m ~ 1, 
                 family = "binomial", 
                 data = ipw_dat)
   w1 = predict(object = ipw_fit, 
@@ -130,7 +130,7 @@ for (r in 1:1000) {
   
   ## Save 
   sim_res |> 
-    write.csv("~/Research/missing_surrogate/code/5. lotspeich code/mcar_weightY+Z_sim_res.csv", 
+    write.csv("~/Research/missing_surrogate/code/5. lotspeich code/mcar_weight1_sim_res.csv", 
               row.names = FALSE)
 }
 

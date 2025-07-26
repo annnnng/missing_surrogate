@@ -80,7 +80,7 @@ for (r in 1:1000) {
   ipw_dat = data.frame(m = c(m1, m0), 
                        y = c(y1, y0), 
                        z = rep(x = c(1, 0), each = 1000))
-  ipw_fit = glm(formula = m ~ z+y, 
+  ipw_fit = glm(formula = m ~ z, 
                 family = "binomial", 
                 data = ipw_dat)
   w1 = predict(object = ipw_fit, 
@@ -113,7 +113,7 @@ for (r in 1:1000) {
                              type = "model", 
                              wone = w1, 
                              wzero = w0)
-  sim_res[r, c("ipw_param_delta", "ipw_param_delta.s", "ipw_param_R.s")] = with(Rparam_miss_ipw, 
+  sim_res[r, c("ipw_nonparam_delta", "ipw_nonparam_delta.s", "ipw_nonparam_R.s")] = with(Rparam_miss_ipw, 
                                                                                          c(delta, delta.s, R.s))
   
   ## Estimate R with semiparametric approach (SMLE)
@@ -126,6 +126,6 @@ for (r in 1:1000) {
   
   ## Save 
   sim_res |> 
-    write.csv("mar_contY_weightY+Z_sim_res.csv", 
+    write.csv("~/Research/missing_surrogate/code/5. lotspeich code/mar_contY_weightZ_sim_res.csv", 
               row.names = FALSE)
 }
